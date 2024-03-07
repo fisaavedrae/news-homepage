@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+#root {
+  max-width: 1280px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+}
+
+#principal {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  grid-template-areas: "menu" "view" "new" "tira";
+}
+.navbar {
+  width: 100%;
+}
+.btn {
+  background-color: hsl(240, 100%, 5%);
+  font-stretch: expanded;
+  letter-spacing: 5px;
+  font-size: 10px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 0;
+  width: 40%;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.btn:hover {
+  background-color: hsl(35, 77%, 62%);
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    width: 100%;
+  }
+  p {
+    color: hsl(233, 8%, 79%);
+    font-size: 12px;
+  }
+  #principal {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "menu menu" "view new" "tira tira";
+  }
+  #menu {
+    width: 100%;
+    grid-area: menu;
+  }
+  .navbar-brand {
+    font-weight: 800;
+    font-size: 40px;
+  }
+  .nav-link {
+    font-size: 14px;
+    color: hsl(236, 13%, 42%);
+  }
+  .nav-link:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+  }
+
+  #view {
+    width: 98%;
+    grid-area: view;
+  }
+  #view img {
+    width: 100%;
+    padding-bottom: 20px;
+  }
+  #view h1 {
+    color: black;
+    font-weight: bold;
+    padding-right: 60px;
+  }
+  #view p {
+    color: hsl(236, 13%, 42%);
+  }
+  #new {
+    width: 100%;
+    grid-area: new;
+    background-color: hsl(240, 100%, 5%);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  #new h2 {
+    color: hsl(35, 77%, 62%);
+  }
+  #new a {
+    color: hsl(36, 100%, 99%);
+    font-size: 14px;
+    font-weight: 800;
+  }
+  #new a:hover {
+    color: hsl(35, 77%, 62%);
+    cursor: pointer;
+  }
+
+  #new p {
+    margin-top: 10px;
+    color: hsl(236, 13%, 42%);
+  }
+
+  .divider {
+    width: 100%;
+    height: 1px;
+    background-color: hsl(236, 13%, 42%);
+    margin-bottom: 10px;
+  }
+  #tira {
+    width: 100%;
+    grid-area: tira;
+    padding-top: 40px;
+  }
+  #tira img {
+    width: 70%;
+  }
+  #tira h3 {
+    color: hsl(233, 8%, 79%);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  #tira a {
+    color: hsl(240, 100%, 5%);
+    font-size: 12px;
+    font-weight: 700;
+  }
+  #tira a:hover {
+    color: hsl(5, 85%, 63%);
+    cursor: pointer;
+  }
+
+  #tira p {
+    padding-top: 10px;
+  }
+}
